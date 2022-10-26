@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/* 
+font-family: 'Overpass', sans-serif;
+
+Colors
+
+- Orange: hsl(25, 97%, 53%)
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+- Font size (paragraph): 15px
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/* Page reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Page centering */
+body {
+  background-color: #141519;
+  font-family: "Overpass", sans-serif;
+  width: 25%;
+  margin: 200px auto;
+}
+
+/* Container #1 layout */
+.container--1 {
+  background-color: #1e252f;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border-radius: 30px;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+/* Star container style and position */
+.icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: #262f36;
+  grid-row: 1;
+  grid-column: 1 / 2;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+.star {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Font styles and positions */
+h1.page-header {
+  color: white;
+  grid-row: 2;
+  grid-column: 1 / 6;
+  padding-left: 35px;
+  margin: auto 0;
+  padding-top: 15px;
+}
+.paragraph {
+  grid-row: 3;
+  grid-column: 1 / 6;
+  padding-left: 35px;
+  margin: auto 0;
+}
+p.paragraph-text {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+/* Buttons styles */
+.btn-style {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #262f36;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+}
+.btn--1 {
+  grid-row: 4;
+  grid-column: 1 / 2;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  grid-row: 4;
+  grid-column: 1 / 6;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.btn--2 {
+  grid-row: 4;
+  grid-column: 2 / 3;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--3 {
+  grid-row: 4;
+  grid-column: 3 / 4;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--4 {
+  grid-row: 4;
+  grid-column: 4 / 5;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--5 {
+  grid-row: 4;
+  grid-column: 5 / 6;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-style:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+.btn-style:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+/* Submit button styles */
+.submit {
+  margin: 10px auto;
+  width: 80%;
+  height: 50px;
+  border-radius: 35px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  letter-spacing: 3px;
+  grid-row: 5;
+  grid-column: 1 / 6;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+/* Container #2 layout */
+.container--2 {
+  background-color: #1e252f;
+  display: grid;
+  border-radius: 30px;
+  gap: 10px;
+  padding: 50px 0;
+  /* display: none; */
+}
+
+/* Image position */
+.thank-you-img {
+  margin: 0 auto;
+}
+
+/* Container styles */
+.selection {
+  background-color: #262f36;
+  width: 50%;
+  border-radius: 35px;
+  font-weight: 400;
+  height: 40px;
+  margin: 10px auto;
+  align-items: center;
+}
+p.selection-text {
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  padding-top: 10px;
+}
+h1.thank-you-header {
+  grid-row: 3;
+  color: white;
+  margin: auto 0;
+  text-align: center;
+}
+p.thank-you-paragraph-text {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+
+/* None display class */
+.no-display {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    width: 90%;
+  }
+}
